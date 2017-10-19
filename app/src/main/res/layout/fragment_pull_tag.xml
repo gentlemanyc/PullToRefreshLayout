@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cc.pulltorefreshlayout.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:orientation="vertical">
+
+                <com.cc.pulltorefreshlayout.PullDownHeaderView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="headView" />
+
+                <TextView
+                    android:id="@+id/tv_target"
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    android:background="@color/colorAccent"
+                    android:drawableLeft="@mipmap/ic_launcher_round"
+                    android:gravity="center"
+                    android:tag="targetView"
+                    android:text="PullToRefreshLayout"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="32sp" />
+            </FrameLayout>
+        </FrameLayout>
+    </ScrollView>
+
+
+</com.cc.pulltorefreshlayout.PullToRefreshLayout>
