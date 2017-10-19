@@ -9,3 +9,7 @@ Android下拉刷新控件，功能和使用方法和系统的SwipeRefreshLayout�
 - 展示、隐藏头部刷新布局setRefreshing(boolean)
 - 禁用下拉setEnabled(boolean)
 - 自定义下拉触发条件：setScrollDownCallBack()
+
+### 截图：
+- with RecyclerView:
+![with RecyclerView](https://github.com/gentlemanyc/PullToRefreshLayout/blob/master/GIF.gif)
